@@ -134,8 +134,8 @@ static std::vector<std::pair<PlayerBounds, FLinearColor>> cachedPlayerBounds;
 std::vector<float>                         cachedPlayerHealth;
 std::map<void*, WeaponTuning>              g_weaponTunings;
 bool  ConsoleFlag = true;
-float screenCenterX = 1280.0f;
-float screenCenterY = 800.0f;
+float screenCenterX = (float)GetSystemMetrics(SM_CXSCREEN) / 2.0;
+float screenCenterY = (float)GetSystemMetrics(SM_CYSCREEN) / 2.0;
 
 // ===================== FUNCTION POINTERS =====================
 
